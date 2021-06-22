@@ -24,7 +24,7 @@ class Position :
         """
         self.addressName = addressName
         if addressName:
-            gps=self.get_gpsCoo()
+            gps=self.gpsFromAddress(addressName)
             self.lat = gps[0]
             self.lgt = gps[1]
         if gps :
@@ -43,6 +43,23 @@ class Position :
         # source  : # https://perso.esiee.fr/~courivad/Python/15-geo.html
         api_url = "https://api-adresse.data.gouv.fr/search/?q="
         r = requests.get(api_url + urllib.parse.quote(self.addressName))
+        coo=r.content.decode('unicode_escape')
+        coo = json.loads(coo)
+        return [coo["features"][0]["geometry"]["coordinates"][1],coo["features"][0]["geometry"]["coordinates"][0]]
+    
+    @staticmethod
+    def gpsFromAddress(address):
+        """
+        Renvoi les coordonnees gps d'une adresse
+
+        renvoi:
+            liste de deux float [latitude,longitude] 
+            contenant les coordonnees gps 
+            exemple : [46.249847, 4.894293]
+        """
+        # source  : # https://perso.esiee.fr/~courivad/Python/15-geo.html
+        api_url = "https://api-adresse.data.gouv.fr/search/?q="
+        r = requests.get(api_url + urllib.parse.quote(address))
         coo=r.content.decode('unicode_escape')
         coo = json.loads(coo)
         return [coo["features"][0]["geometry"]["coordinates"][1],coo["features"][0]["geometry"]["coordinates"][0]]
