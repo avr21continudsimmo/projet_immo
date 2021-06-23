@@ -38,10 +38,15 @@ test['addressName']=test.apply(lambda row:
     +str(row['Commune'])
     , axis = 1)
 
-print(test)
-
+# get gps coo
 test['gps']=test.apply(lambda row: 
     pos.gpsFromAddress(row['addressName'])
     , axis = 1)
 
-print(test)
+
+# trouver les biens à moins de 300km de Lyon : [45.7578137,4.8320114]
+test['nearLyon']=test.apply(lambda row: 
+    pos.distance([45.7578137,4.8320114],row['gps'])<300
+    , axis = 1)
+
+print(test[['addressName','nearLyon']])
