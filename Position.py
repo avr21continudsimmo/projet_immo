@@ -47,8 +47,11 @@ class Position :
         r = requests.get(api_url + urllib.parse.quote(address))
         coo=r.content.decode('unicode_escape')
         coo = json.loads(coo)
-        return [coo["features"][0]["geometry"]["coordinates"][1],coo["features"][0]["geometry"]["coordinates"][0]]
-    
+        try: # certaines adresses ne sont pas trouvees
+            return [coo["features"][0]["geometry"]["coordinates"][1],coo["features"][0]["geometry"]["coordinates"][0]]
+        except:
+            pass
+        
     @staticmethod
     def distance(p1,p2):
         """
@@ -65,6 +68,6 @@ class Position :
         for k in range(2):
             p1[k]=(p1[k]*np.pi)/180 
             p2[k]=(p2[k]*np.pi)/180 
-        # calcul
+        # calcul  
         d=6371*np.arccos((np.sin(p1[0])*np.sin(p2[0])+(np.cos(p1[0])*np.cos(p2[0])*np.cos(p2[1]-p1[1]))))
         return d

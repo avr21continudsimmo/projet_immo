@@ -4,6 +4,13 @@ from Position import Position as pos
 
 # Chargement du jeu de données
 df=pd.read_csv('datas/valeursfoncieres-2020.txt',sep="|",decimal=",")
+"""
+df=pd.read_csv('datas/valeursfoncieres-2020.csv')
+df.info()
+print(df.addressName.isna().sum())
+print(df['Code postal'].isna().sum())
+"""
+
 #df.head()
 #print(df.columns)
 
@@ -11,13 +18,16 @@ df=pd.read_csv('datas/valeursfoncieres-2020.txt',sep="|",decimal=",")
 ad=df[['No voie', 'Type de voie', 'Voie', 'Code postal','Commune']]
 
 # restriction a quelques elements pour test
-test = ad.sample(n=3)
+# test = ad.sample(n=3)
+test = df
 
 # cast (les codes postaux sont vus comme des float)
 #   une premiere etape consiste à le transformer en int
 #   puis en str pour rajouter les zeros 
 #   pour les codes postaux commençant par 0 comme 012345
 #   (fait avec la fonction zfill)
+test = test[-test['Code postal'].isna()]
+
 test['Code postal']=test['Code postal'].astype(int).astype(str)
 
 # format addresses
@@ -29,24 +39,21 @@ def escapeNan(row):
     val=val.replace('.0','') # if from float values
     return val
 
-# get addressName
+def getAddressName(row):
+    try:  # evite de bloquer le programme en cas d'echec
+        addressName = escapeNan(row['No voie'])+' '
+        addressName+= escapeNan(row['Type de voie'])+' '        
+        addressName+= row['Voie']+' '
+        addressName+= row['Code postal'].zfill(5)+' ' # pour respecter le format des codes postaux
+        addressName+= str(row['Commune'])
+        return addressName
+    except:
+        return ''
+
 test['addressName']=test.apply(lambda row: 
-    escapeNan(row['No voie'])+' ' 
-    +escapeNan(row['Type de voie'])+' '        
-    +row['Voie']+' '
-    +row['Code postal'].zfill(5)+' ' # pour respecter le format des codes postaux
-    +str(row['Commune'])
+    getAddressName(row)
     , axis = 1)
 
-# get gps coo
-test['gps']=test.apply(lambda row: 
-    pos.gpsFromAddress(row['addressName'])
-    , axis = 1)
+print(test)
 
-
-# trouver les biens à moins de 300km de Lyon : [45.7578137,4.8320114]
-test['nearLyon']=test.apply(lambda row: 
-    pos.distance([45.7578137,4.8320114],row['gps'])<300
-    , axis = 1)
-
-print(test[['addressName','nearLyon']])
+test.to_csv('datas/valeursfoncieres-2020.csv')
