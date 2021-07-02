@@ -48,7 +48,7 @@ df['prix_m2'] = df['Valeur fonciere'] / df['Surface reelle bati']
 df = df[-df['prix_m2'].isna()]
 
 type_bien = st.radio('', options = ['Maisons', 'Appartements', 'Maisons et Appartements'])
-dep = st.text_input('Département', value = '')
+dep = st.text_input('Département', value = '75')
 dep = str(dep)
 
 # Maison only
@@ -68,11 +68,24 @@ prix_moyen_commune = prix_moyen_commune[-prix_moyen_commune['prix_m2'].isna()]
 prix_moyen_commune = prix_moyen_commune[prix_moyen_commune['prix_m2'] < 20000]
 prix_moyen_commune = prix_moyen_commune[prix_moyen_commune['prix_m2'] > 100]
 
-st.write('Communes du département ' + dep + ' avec les prix au m2 les plus élevés :')
+#st.write('Communes du département ' + dep + ' avec les prix au m2 les plus élevés :')
 #st.write(prix_moyen_commune[prix_moyen_commune['DEPCOM'].str.startswith(dep)].sort_values(by = 'prix_m2', ascending = False))
 
 
+
+
+
+
+
 # ------ Création de la cartographie ------
+
+# Import des coordonnées GPS par département pour centrer la cartographie
+gps_dep = pd.read_csv('GPS_departement.csv', sep = ";")
+dep_latitude = gps_dep[gps_dep['Code departement'] == dep]['Latitude']
+dep_longitude = gps_dep[gps_dep['Code departement'] == dep]['Longitude']
+dep_nom = gps_dep[gps_dep['Code departement'] == dep]['Nom departement']
+
+st.write('Prix au m² des communes du département ' + dep_nom + ' (' + dep + ')')
 
 import folium
 from folium.features import GeoJson, GeoJsonTooltip, GeoJsonPopup
@@ -113,7 +126,7 @@ with open("c_selec.geojson", "w") as f:
     
 # Map
 
-coords = (44.923388,-0.588717)
+coords = (dep_latitude,dep_longitude)
 
 f = folium.Figure(width=680, height=750)
 
@@ -148,7 +161,7 @@ g = folium.Choropleth(
     data = c_selec,
     columns = ['DEPCOM', 'prix_m2'], # data key/value pair
     key_on = 'feature.properties.DEPCOM', # corresponding layer in GeoJSON
-    threshold_scale = [0, 2000, 4000, 6000, 8000, 10000, 20000],
+    #threshold_scale = [0, 2000, 4000, 6000, 8000, 10000, 20000],
     fill_color = 'OrRd',
     fill_opacity = 0.8,
     line_opacity = 0.2,
