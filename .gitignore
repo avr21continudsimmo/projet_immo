@@ -1,2 +1,8 @@
 /__pycache__/*
 *.ipynb
+*.txt
+*.shp
+*.shx
+*.prj
+*.dbf
+*.cpg
