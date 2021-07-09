@@ -115,9 +115,9 @@ Autre_villes = Autre_villes[(Autre_villes["Valeur fonciere"] < outliers_max_Autr
 
 del outliers_max_Autre_villes, outliers_min_Autre_villes, outliers_max_Autre_villes_surface
 del outliers_min_Autre_villes_surface, outliers_max_Autre_villes_prix_m2, outliers_min_Autre_villes_prix_m2
-del Paris, Autre_villes
 
 df_clean = pd.concat([Paris,Autre_villes], axis = 0)
+del Paris, Autre_villes
 
 ##Ajout des régions via le code département
 dep_reg = dep_reg.rename(columns = {"num_dep":"Code departement"})
@@ -141,3 +141,4 @@ df_clean.drop("Classement", axis = 1, inplace = True)
 
 del communes_littorales, dep_reg, df, dico2, dico3, dummies
 
+#df_clean.to_csv("df_clean.csv")
