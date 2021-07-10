@@ -79,9 +79,9 @@ Paris = df[df["Paris"]==1]
 Autre_villes = df[df["Paris"]==0]
 
 #Gestion des valeurs abberantes Paris
-outliers_max_Paris = Paris["Valeur fonciere"].quantile(0.95)
+outliers_max_Paris = Paris["Valeur fonciere"].quantile(0.97)
 outliers_min_Paris = Paris["Valeur fonciere"].quantile(0.05)
-outliers_max_Paris_surface = Paris["Surface reelle bati"].quantile(0.98)
+outliers_max_Paris_surface = Paris["Surface reelle bati"].quantile(0.99)
 outliers_min_Paris_surface = Paris["Surface reelle bati"].quantile(0.01)
 outliers_max_Paris_prix_m2= Paris["Prix m2"].quantile(0.98)
 outliers_min_Paris_prix_m2 = Paris["Prix m2"].quantile(0.1)
@@ -98,8 +98,8 @@ del outliers_max_Paris, outliers_min_Paris, outliers_max_Paris_surface, outliers
 del    outliers_max_Paris_prix_m2, outliers_min_Paris_prix_m2
 
 #gestion des valeurs abberantes des villes autre que Paris
-outliers_max_Autre_villes = Autre_villes["Valeur fonciere"].quantile(0.98)
-outliers_min_Autre_villes = Autre_villes["Valeur fonciere"].quantile(0.1)
+outliers_max_Autre_villes = Autre_villes["Valeur fonciere"].quantile(0.996)
+outliers_min_Autre_villes = Autre_villes["Valeur fonciere"].quantile(0.05)
 outliers_max_Autre_villes_surface = Autre_villes["Surface reelle bati"].quantile(0.999)
 outliers_min_Autre_villes_surface = Autre_villes["Surface reelle bati"].quantile(0.0005)
 outliers_max_Autre_villes_prix_m2= Autre_villes["Prix m2"].quantile(0.998)
