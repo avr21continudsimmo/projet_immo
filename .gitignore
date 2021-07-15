@@ -7,3 +7,12 @@
 *.dbf
 *.cpg
 *.csv
+*.twbx
+*.zip
+*.geojson
+Data Viz Folium/Tests Folium/map_bdx.html
+Data Viz Folium/Tests Folium/map_idf.html
+*.pdf
+*.docx
+*.rtf
+*.xlsx
