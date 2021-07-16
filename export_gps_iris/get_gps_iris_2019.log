@@ -1,0 +1,33 @@
+INFO:root:Calcul des coordonnées GPS et Codes IRIS de 0 à 2499
+INFO:root:Heure début : 11:20:31
+
+INFO:root:Etape : 100, Temps pour 100 items: 50.74466419219971 sec
+INFO:root:Etape : 200, Temps pour 100 items: 52.72326159477234 sec
+INFO:root:Etape : 300, Temps pour 100 items: 51.25305938720703 sec
+INFO:root:Etape : 400, Temps pour 100 items: 49.755857944488525 sec
+INFO:root:Etape : 500, Temps pour 100 items: 51.393147230148315 sec
+INFO:root:Etape : 600, Temps pour 100 items: 51.116400718688965 sec
+INFO:root:Etape : 700, Temps pour 100 items: 50.43191885948181 sec
+INFO:root:Etape : 800, Temps pour 100 items: 50.21606469154358 sec
+INFO:root:Etape : 900, Temps pour 100 items: 50.21002459526062 sec
+INFO:root:Etape : 1000, Temps pour 100 items: 53.19800281524658 sec
+INFO:root:02 - Export intermédiaire : 0-999
+INFO:root:Etape : 1100, Temps pour 100 items: 53.94173812866211 sec
+INFO:root:Etape : 1200, Temps pour 100 items: 49.95416855812073 sec
+INFO:root:Etape : 1300, Temps pour 100 items: 51.00406002998352 sec
+INFO:root:Etape : 1400, Temps pour 100 items: 50.334450483322144 sec
+INFO:root:Etape : 1500, Temps pour 100 items: 50.48014497756958 sec
+INFO:root:Etape : 1600, Temps pour 100 items: 50.65585446357727 sec
+INFO:root:Etape : 1700, Temps pour 100 items: 51.833759784698486 sec
+INFO:root:Etape : 1800, Temps pour 100 items: 50.366445779800415 sec
+INFO:root:Etape : 1900, Temps pour 100 items: 50.13083219528198 sec
+INFO:root:Etape : 2000, Temps pour 100 items: 51.15731692314148 sec
+INFO:root:02 - Export intermédiaire : 1000-1999
+INFO:root:Etape : 2100, Temps pour 100 items: 50.685219049453735 sec
+INFO:root:Etape : 2200, Temps pour 100 items: 50.27480506896973 sec
+INFO:root:Etape : 2300, Temps pour 100 items: 51.2722544670105 sec
+INFO:root:Etape : 2400, Temps pour 100 items: 51.43261456489563 sec
+INFO:root:Etape : 2500, Temps pour 100 items: 50.21271204948425 sec
+INFO:root:Heure fin : 11:41:46
+
+INFO:root:Temps de calcul : 1274.7957038879395 sec
