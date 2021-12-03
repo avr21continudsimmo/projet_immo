@@ -1,0 +1,41 @@
+INFO:root:Calcul des coordonnées GPS de 2490000 à 2799999
+INFO:root:Heure début : 15:14:52
+
+INFO:root:Calcul des coordonnées GPS de 2490000 à 2799999
+INFO:root:Heure début : 15:15:42
+
+INFO:root:Calcul des coordonnées GPS de 2490000 à 2799999
+INFO:root:Heure début : 15:16:25
+
+INFO:root:Calcul des coordonnées GPS de 0 à 999
+INFO:root:Heure début : 15:16:55
+
+INFO:root:Etape : 100, Temps pour 100 items: 52.11666393280029 sec
+INFO:root:Etape : 200, Temps pour 100 items: 51.66123962402344 sec
+INFO:root:Etape : 300, Temps pour 100 items: 50.74768948554993 sec
+INFO:root:Calcul des coordonnées GPS de 0 à 999
+INFO:root:Heure début : 15:20:15
+
+INFO:root:Etape : 100, Temps pour 100 items: 52.17186164855957 sec
+INFO:root:02 - Export intermédiaire : 0-99
+INFO:root:Etape : 200, Temps pour 100 items: 50.19074058532715 sec
+INFO:root:02 - Export intermédiaire : 100-199
+INFO:root:Etape : 300, Temps pour 100 items: 50.221556425094604 sec
+INFO:root:02 - Export intermédiaire : 200-299
+INFO:root:Etape : 400, Temps pour 100 items: 50.48190951347351 sec
+INFO:root:02 - Export intermédiaire : 300-399
+INFO:root:Etape : 500, Temps pour 100 items: 52.11190748214722 sec
+INFO:root:02 - Export intermédiaire : 400-499
+INFO:root:Etape : 600, Temps pour 100 items: 51.46122479438782 sec
+INFO:root:02 - Export intermédiaire : 500-599
+INFO:root:Etape : 700, Temps pour 100 items: 51.07094740867615 sec
+INFO:root:02 - Export intermédiaire : 600-699
+INFO:root:Etape : 800, Temps pour 100 items: 51.12585473060608 sec
+INFO:root:02 - Export intermédiaire : 700-799
+INFO:root:Etape : 900, Temps pour 100 items: 52.21890640258789 sec
+INFO:root:02 - Export intermédiaire : 800-899
+INFO:root:Etape : 1000, Temps pour 100 items: 49.93880581855774 sec
+INFO:root:02 - Export intermédiaire : 900-999
+INFO:root:Heure fin : 15:33:46
+
+INFO:root:Temps de calcul : 811.2434685230255 sec
