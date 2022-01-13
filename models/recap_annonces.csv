@@ -1,0 +1,249 @@
+,feature,type_local,feature_binary,nb_biens,prix_m2
+0,Exposition_Sud,Tous Biens,non,8620,3736
+1,Exposition_Sud,Tous Biens,oui,1044,3852
+0,Exposition_Sud,Appartements,non,4394,3991
+1,Exposition_Sud,Appartements,oui,633,3861
+0,Exposition_Sud,Maisons,non,4226,3470
+1,Exposition_Sud,Maisons,oui,411,3838
+0,Lumineux,Tous Biens,non,6501,3711
+1,Lumineux,Tous Biens,oui,3163,3826
+0,Lumineux,Appartements,non,3028,3991
+1,Lumineux,Appartements,oui,1999,3950
+0,Lumineux,Maisons,non,3473,3466
+1,Lumineux,Maisons,oui,1164,3612
+0,Calme,Tous Biens,non,5325,3789
+1,Calme,Tous Biens,oui,4339,3698
+0,Calme,Appartements,non,2849,4064
+1,Calme,Appartements,oui,2178,3858
+0,Calme,Maisons,non,2476,3473
+1,Calme,Maisons,oui,2161,3537
+0,Volume,Tous Biens,non,7941,3712
+1,Volume,Tous Biens,oui,1723,3917
+0,Volume,Appartements,non,4134,3933
+1,Volume,Appartements,oui,893,4170
+0,Volume,Maisons,non,3807,3471
+1,Volume,Maisons,oui,830,3645
+0,Standing,Tous Biens,non,9130,3712
+1,Standing,Tous Biens,oui,534,4364
+0,Standing,Appartements,non,4588,3929
+1,Standing,Appartements,oui,439,4455
+0,Standing,Maisons,non,4542,3493
+1,Standing,Maisons,oui,95,3943
+0,Charme,Tous Biens,non,7820,3735
+1,Charme,Tous Biens,oui,1844,3803
+0,Charme,Appartements,non,4259,3925
+1,Charme,Appartements,oui,768,4254
+0,Charme,Maisons,non,3561,3509
+1,Charme,Maisons,oui,1076,3482
+0,Mezzanine,Tous Biens,non,9277,3747
+1,Mezzanine,Tous Biens,oui,387,3781
+0,Mezzanine,Appartements,non,4910,3962
+1,Mezzanine,Appartements,oui,117,4498
+0,Mezzanine,Maisons,non,4367,3504
+1,Mezzanine,Maisons,oui,270,3470
+0,Avec_Ascenseur,Tous Biens,non,8816,3722
+1,Avec_Ascenseur,Tous Biens,oui,848,4023
+0,Avec_Ascenseur,Appartements,non,4180,3965
+1,Avec_Ascenseur,Appartements,oui,847,4023
+0,Avec_Ascenseur,Maisons,non,4636,3502
+1,Avec_Ascenseur,Maisons,oui,1,4200
+0,Sans_Ascenseur,Tous Biens,non,9443,3749
+1,Sans_Ascenseur,Tous Biens,oui,221,3710
+0,Sans_Ascenseur,Appartements,non,4807,3987
+1,Sans_Ascenseur,Appartements,oui,220,3714
+0,Sans_Ascenseur,Maisons,non,4636,3503
+1,Sans_Ascenseur,Maisons,oui,1,2892
+0,Duplex,Tous Biens,non,9264,3728
+1,Duplex,Tous Biens,oui,400,4221
+0,Duplex,Appartements,non,4708,3955
+1,Duplex,Appartements,oui,319,4275
+0,Duplex,Maisons,non,4556,3493
+1,Duplex,Maisons,oui,81,4012
+0,Dernier_etage,Tous Biens,non,8855,3733
+1,Dernier_etage,Tous Biens,oui,809,3915
+0,Dernier_etage,Appartements,non,4269,3983
+1,Dernier_etage,Appartements,oui,758,3931
+0,Dernier_etage,Maisons,non,4586,3501
+1,Dernier_etage,Maisons,oui,51,3677
+0,Premier_etage,Tous Biens,non,8795,3741
+1,Premier_etage,Tous Biens,oui,869,3821
+0,Premier_etage,Appartements,non,4471,3976
+1,Premier_etage,Appartements,oui,556,3970
+0,Premier_etage,Maisons,non,4324,3499
+1,Premier_etage,Maisons,oui,313,3557
+0,Deuxieme_etage,Tous Biens,non,9244,3743
+1,Deuxieme_etage,Tous Biens,oui,420,3861
+0,Deuxieme_etage,Appartements,non,4679,3974
+1,Deuxieme_etage,Appartements,oui,348,3991
+0,Deuxieme_etage,Maisons,non,4565,3507
+1,Deuxieme_etage,Maisons,oui,72,3230
+0,Troisieme_etage,Tous Biens,non,9469,3743
+1,Troisieme_etage,Tous Biens,oui,195,4008
+0,Troisieme_etage,Appartements,non,4846,3971
+1,Troisieme_etage,Appartements,oui,181,4090
+0,Troisieme_etage,Maisons,non,4623,3504
+1,Troisieme_etage,Maisons,oui,14,2948
+0,Quatrieme_etage,Tous Biens,non,9562,3744
+1,Quatrieme_etage,Tous Biens,oui,102,4189
+0,Quatrieme_etage,Appartements,non,4928,3970
+1,Quatrieme_etage,Appartements,oui,99,4236
+0,Quatrieme_etage,Maisons,non,4634,3503
+1,Quatrieme_etage,Maisons,oui,3,2634
+0,Cinquieme_etage,Tous Biens,non,9619,3747
+1,Cinquieme_etage,Tous Biens,oui,45,4047
+0,Cinquieme_etage,Appartements,non,4982,3974
+1,Cinquieme_etage,Appartements,oui,45,4047
+0,Cinquieme_etage,Maisons,non,4637,3502
+0,Sixieme_etage,Tous Biens,non,9624,3748
+1,Sixieme_etage,Tous Biens,oui,40,3745
+0,Sixieme_etage,Appartements,non,4987,3977
+1,Sixieme_etage,Appartements,oui,40,3745
+0,Sixieme_etage,Maisons,non,4637,3502
+0,Septieme_etage,Tous Biens,non,9645,3748
+1,Septieme_etage,Tous Biens,oui,19,3640
+0,Septieme_etage,Appartements,non,5008,3976
+1,Septieme_etage,Appartements,oui,19,3640
+0,Septieme_etage,Maisons,non,4637,3502
+0,Huitieme_etage,Tous Biens,non,9656,3748
+1,Huitieme_etage,Tous Biens,oui,8,3469
+0,Huitieme_etage,Appartements,non,5019,3976
+1,Huitieme_etage,Appartements,oui,8,3469
+0,Huitieme_etage,Maisons,non,4637,3502
+0,RDC,Tous Biens,non,7589,3766
+1,RDC,Tous Biens,oui,2075,3684
+0,RDC,Appartements,non,4565,3978
+1,RDC,Appartements,oui,462,3949
+0,RDC,Maisons,non,3024,3446
+1,RDC,Maisons,oui,1613,3608
+0,Design,Tous Biens,non,9483,3738
+1,Design,Tous Biens,oui,181,4296
+0,Design,Appartements,non,4978,3967
+1,Design,Appartements,oui,49,4740
+0,Design,Maisons,non,4505,3484
+1,Design,Maisons,oui,132,4131
+0,Terrasse,Tous Biens,non,4361,3741
+1,Terrasse,Tous Biens,oui,5303,3754
+0,Terrasse,Appartements,non,1740,4223
+1,Terrasse,Appartements,oui,3287,3844
+0,Terrasse,Maisons,non,2621,3422
+1,Terrasse,Maisons,oui,2016,3607
+0,Parfait_etat,Tous Biens,non,8048,3717
+1,Parfait_etat,Tous Biens,oui,1616,3906
+0,Parfait_etat,Appartements,non,3881,3961
+1,Parfait_etat,Appartements,oui,1146,4021
+0,Parfait_etat,Maisons,non,4167,3489
+1,Parfait_etat,Maisons,oui,470,3623
+0,Travaux,Tous Biens,non,9591,3750
+1,Travaux,Tous Biens,oui,73,3572
+0,Travaux,Appartements,non,4998,3974
+1,Travaux,Appartements,oui,29,4094
+0,Travaux,Maisons,non,4593,3505
+1,Travaux,Maisons,oui,44,3228
+0,Proche_commodites,Tous Biens,non,9560,3748
+1,Proche_commodites,Tous Biens,oui,104,3757
+0,Proche_commodites,Appartements,non,4972,3975
+1,Proche_commodites,Appartements,oui,55,3962
+0,Proche_commodites,Maisons,non,4588,3502
+1,Proche_commodites,Maisons,oui,49,3528
+0,Vue_degagee,Tous Biens,non,8729,3747
+1,Vue_degagee,Tous Biens,oui,935,3761
+0,Vue_degagee,Appartements,non,4556,3980
+1,Vue_degagee,Appartements,oui,471,3925
+0,Vue_degagee,Maisons,non,4173,3492
+1,Vue_degagee,Maisons,oui,464,3595
+0,Securise,Tous Biens,non,8905,3742
+1,Securise,Tous Biens,oui,759,3818
+0,Securise,Appartements,non,4423,3987
+1,Securise,Appartements,oui,604,3887
+0,Securise,Maisons,non,4482,3501
+1,Securise,Maisons,oui,155,3547
+0,Emplacement,Tous Biens,non,7989,3696
+1,Emplacement,Tous Biens,oui,1675,3997
+0,Emplacement,Appartements,non,3962,3917
+1,Emplacement,Appartements,oui,1065,4190
+0,Emplacement,Maisons,non,4027,3479
+1,Emplacement,Maisons,oui,610,3659
+0,Atypique,Tous Biens,non,9208,3755
+1,Atypique,Tous Biens,oui,456,3612
+0,Atypique,Appartements,non,4919,3968
+1,Atypique,Appartements,oui,108,4288
+0,Atypique,Maisons,non,4289,3511
+1,Atypique,Maisons,oui,348,3402
+0,Nature,Tous Biens,non,8188,3783
+1,Nature,Tous Biens,oui,1476,3555
+0,Nature,Appartements,non,4624,3984
+1,Nature,Appartements,oui,403,3866
+0,Nature,Maisons,non,3564,3522
+1,Nature,Maisons,oui,1073,3438
+0,Meuble,Tous Biens,non,7742,3775
+1,Meuble,Tous Biens,oui,1922,3642
+0,Meuble,Appartements,non,3979,4009
+1,Meuble,Appartements,oui,1048,3845
+0,Meuble,Maisons,non,3763,3527
+1,Meuble,Maisons,oui,874,3398
+0,Cave,Tous Biens,non,7372,3703
+1,Cave,Tous Biens,oui,2292,3892
+0,Cave,Appartements,non,3288,3986
+1,Cave,Appartements,oui,1739,3955
+0,Cave,Maisons,non,4084,3476
+1,Cave,Maisons,oui,553,3696
+0,Parking,Tous Biens,non,6448,3692
+1,Parking,Tous Biens,oui,3216,3860
+0,Parking,Appartements,non,2458,4088
+1,Parking,Appartements,oui,2569,3866
+0,Parking,Maisons,non,3990,3448
+1,Parking,Maisons,oui,647,3837
+0,Cuisine_americaine,Tous Biens,non,7486,3716
+1,Cuisine_americaine,Tous Biens,oui,2178,3858
+0,Cuisine_americaine,Appartements,non,3874,3949
+1,Cuisine_americaine,Appartements,oui,1153,4063
+0,Cuisine_americaine,Maisons,non,3612,3467
+1,Cuisine_americaine,Maisons,oui,1025,3628
+0,Investissement_locatif,Tous Biens,non,9109,3752
+1,Investissement_locatif,Tous Biens,oui,555,3694
+0,Investissement_locatif,Appartements,non,4591,3990
+1,Investissement_locatif,Appartements,oui,436,3812
+0,Investissement_locatif,Maisons,non,4518,3509
+1,Investissement_locatif,Maisons,oui,119,3261
+0,Proche_ecoles,Tous Biens,non,7413,3763
+1,Proche_ecoles,Tous Biens,oui,2251,3700
+0,Proche_ecoles,Appartements,non,3798,4046
+1,Proche_ecoles,Appartements,oui,1229,3757
+0,Proche_ecoles,Maisons,non,3615,3466
+1,Proche_ecoles,Maisons,oui,1022,3632
+0,Dressing,Tous Biens,non,8204,3740
+1,Dressing,Tous Biens,oui,1460,3793
+0,Dressing,Appartements,non,4348,3981
+1,Dressing,Appartements,oui,679,3936
+0,Dressing,Maisons,non,3856,3469
+1,Dressing,Maisons,oui,781,3668
+0,Plain_Pied,Tous Biens,non,8812,3765
+1,Plain_Pied,Tous Biens,oui,852,3574
+0,Plain_Pied,Appartements,non,4988,3974
+1,Plain_Pied,Appartements,oui,39,4121
+0,Plain_Pied,Maisons,non,3824,3493
+1,Plain_Pied,Maisons,oui,813,3548
+0,Garage,Tous Biens,non,6410,3791
+1,Garage,Tous Biens,oui,3254,3663
+0,Garage,Appartements,non,4120,3953
+1,Garage,Appartements,oui,907,4073
+0,Garage,Maisons,non,2290,3500
+1,Garage,Maisons,oui,2347,3505
+0,Grange,Tous Biens,non,9595,3756
+1,Grange,Tous Biens,oui,69,2714
+0,Grange,Appartements,non,5019,3974
+1,Grange,Appartements,oui,8,4327
+0,Grange,Maisons,non,4576,3516
+1,Grange,Maisons,oui,61,2503
+0,Buanderie,Tous Biens,non,8205,3759
+1,Buanderie,Tous Biens,oui,1459,3687
+0,Buanderie,Appartements,non,4569,3979
+1,Buanderie,Appartements,oui,458,3930
+0,Buanderie,Maisons,non,3636,3482
+1,Buanderie,Maisons,oui,1001,3576
+0,Dependance,Tous Biens,non,9130,3781
+1,Dependance,Tous Biens,oui,534,3183
+0,Dependance,Appartements,non,5008,3977
+1,Dependance,Appartements,oui,19,3345
+0,Dependance,Maisons,non,4122,3543
+1,Dependance,Maisons,oui,515,3177

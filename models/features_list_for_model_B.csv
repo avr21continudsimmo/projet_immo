@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f30b7fdc25aed18564cd03ac27a93b0d3233f3049a112cbdae1acd7db7eacbd9
-size 727
+,feature_name
+0,type
+1,Exposition_Sud
+2,Lumineux
+3,Calme
+4,Volume
+5,Standing
+6,Charme
+7,Mezzanine
+8,Avec_Ascenseur
+9,Sans_Ascenseur
+10,Duplex
+11,Dernier_etage
+12,Premier_etage
+13,Deuxieme_etage
+14,Troisieme_etage
+15,Quatrieme_etage
+16,Cinquieme_etage
+17,Sixieme_etage
+18,Septieme_etage
+19,Huitieme_etage
+20,RDC
+21,Design
+22,Terrasse
+23,Parfait_etat
+24,Travaux
+25,Proche_commodites
+26,Vue_degagee
+27,Securise
+28,Emplacement
+29,Atypique
+30,Nature
+31,Meuble
+32,Cave
+33,Parking
+34,Cuisine_americaine
+35,Investissement_locatif
+36,Proche_ecoles
+37,Dressing
+38,Plain_Pied
+39,Garage
+40,Grange
+41,Buanderie
+42,Dependance
