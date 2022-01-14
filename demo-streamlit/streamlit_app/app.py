@@ -27,8 +27,8 @@ TABS = OrderedDict(
     [
         (intro.sidebar_name, intro),
         (second_tab.sidebar_name, second_tab),
-        (third_tab.sidebar_name, third_tab),
         (fourth_tab.sidebar_name, fourth_tab),          
+        (third_tab.sidebar_name, third_tab),
         (demo.sidebar_name, demo)
     ]
 )
