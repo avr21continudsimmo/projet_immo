@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e654f6a287c3ffc646f17b13698c417b634632d266c4a6b4c04a02f89ffc40a4
-size 427
+,feature_name
+0,Surface terrain
+1,Surface reelle bati
+2,Type local
+3,Nombre pieces principales
+4,Paris
+5,Mer
+6,prix m2 commune
+7,prix m2 gps
+8,Collège ou lycée
+9,Crèche
+10,Ecole mat et primaire
+11,Ecole sup
+12,Gare
+13,Hotels
+14,Info touristique
+15,Police ou gendarmerie
+16,Salle multisport
+17,anciennete
+18,consommation_energie
+19,estimation_ges
+20,loyer
+21,SNHMO18
+22,SNHMFO18
+23,Population totale
