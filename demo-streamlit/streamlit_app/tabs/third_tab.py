@@ -5,7 +5,7 @@ import os
 
 
 title = "Visualisation prix DVF"
-sidebar_name = "2. Visualisation prix DVF"
+sidebar_name = "3. Visualisation prix DVF"
 
 
 def run():

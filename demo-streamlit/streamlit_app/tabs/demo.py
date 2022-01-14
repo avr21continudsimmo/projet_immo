@@ -23,7 +23,7 @@ def run():
                              # La prédiction ne sera alors basée que sur le modèle A
                              # Il est toutefois possible de l'activer pour voir ce que cela donne
                              
-    image = img.imread('models/demo.png')
+    image = img.imread('../../models/demo.png')
     
     
     
@@ -91,8 +91,9 @@ def run():
     model_A_appart_province = load('../../models/model_rf_1_appart_province.pkl')
     model_A_appart_paris = load('../../models/model_rf_2_appart_paris.pkl')
     model_A_maison_province = load('../../models/model_rf_3_maison_province.pkl')
-    model_A_all_XGB = load('../../models/model_xgb_all.pkl')
     model_A_all_Linear = load('../../models/model_lr_all.pkl')
+    model_A_all_knn5 = load('../../models/model_knn5_all.pkl')
+    model_A_all_dtree = load('../../models/model_dtree_all.pkl')
     
     
     # Chargement de la liste des features requis pour faire tourner le modèle
@@ -172,6 +173,8 @@ def run():
         salle_sport = int(bpe[bpe['code_iris_clean'] == iris_annonce]['Salle multisport'])
     
     
+    st.write(df_feat)
+    
     # Récap des propriétés du bien pour prédiction du modèle A et calcul des prédictions
     
     annonce_proprietes_A = [surface_terrain, surface, type_local, nb_pieces, paris, mer, prix_m2_commune_bien_val, 
@@ -179,13 +182,15 @@ def run():
                             salle_sport, anciennete, conso_energie, estim_ges, loyer, SNHMO18, SNHMFO18, pop]
     
     annonce_proprietes_A = np.array(annonce_proprietes_A).reshape(1, df_feat.shape[0])
-    
+        
     pred_model_A_all = int(model_A_all.predict(annonce_proprietes_A))
     pred_model_A_appart_province = int(model_A_appart_province.predict(annonce_proprietes_A))
     pred_model_A_appart_paris = int(model_A_appart_paris.predict(annonce_proprietes_A))
     pred_model_A_maison_province = int(model_A_maison_province.predict(annonce_proprietes_A))
-    pred_model_A_all_XGB = int(model_A_all_XGB.predict(annonce_proprietes_A))
     pred_model_A_all_Linear = int(model_A_all_Linear.predict(annonce_proprietes_A))
+    pred_model_A_all_knn5 = int(model_A_all_knn5.predict(annonce_proprietes_A))
+    pred_model_A_all_dtree = int(model_A_all_dtree.predict(annonce_proprietes_A))
+    
     
     
     if paris == 1:
@@ -197,7 +202,8 @@ def run():
     else:
         prix_base_A = pred_model_A_all
 
-
+    
+    
     # Calcul du bonus / malus du modèle B
     
     # Chargement des modèles B
@@ -276,8 +282,8 @@ def run():
     st.subheader('Comparaison des modèles de prédiction')
     
     fig, ax = plt.subplots()
-    model_list = ['Random Forest Général (RF)', 'RF Appartement Province)', 'RF (Appartement Paris)', 'RF (Maison Province)', 'XGBoost', 'Régression Linéaire']
-    pred_list = [pred_model_A_all, pred_model_A_appart_province, pred_model_A_appart_paris, pred_model_A_maison_province, pred_model_A_all_XGB, pred_model_A_all_Linear]
+    model_list = ['Random Forest Général (RF)', 'RF Appartement Province)', 'RF (Appartement Paris)', 'RF (Maison Province)', 'Régression Linéaire', 'KNN-5', 'Decision Tree']
+    pred_list = [pred_model_A_all, pred_model_A_appart_province, pred_model_A_appart_paris, pred_model_A_maison_province, pred_model_A_all_Linear, pred_model_A_all_knn5, pred_model_A_all_dtree]
     
     ax.bar(model_list, pred_list, orientation = "vertical")
     plt.xlabel('Modèle utilisé')
