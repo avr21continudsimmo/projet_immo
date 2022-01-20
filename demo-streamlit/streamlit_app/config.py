@@ -35,4 +35,4 @@ TEAM_MEMBERS = [
     )
 ]
 
-PROMOTION = "Promotion Bootcamp Data Scientist - April 2021"
+PROMOTION = "Promotion Data Scientist Continu - April 2021"

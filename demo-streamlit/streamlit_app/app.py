@@ -6,7 +6,7 @@ import streamlit as st
 import config
 
 # TODO : you can (and should) rename and add tabs in the ./tabs folder, and import them here.
-from tabs import _intro, i_prix_annonces, ii_prix_features, iii_prix_dvf, iv_annonce, iv_demo
+from tabs import _intro, ii_prix_annonces, iii_prix_features, i_prix_dvf, iv_annonce, iv_demo
 
 
 st.set_page_config(
@@ -26,10 +26,10 @@ st.markdown(f"<style>{style}</style>", unsafe_allow_html=True)
 TABS = OrderedDict(
     [
         (_intro.sidebar_name, _intro),
-        (i_prix_annonces.sidebar_name, i_prix_annonces),
-        (ii_prix_features.sidebar_name, ii_prix_features),          
-        (iii_prix_dvf.sidebar_name, iii_prix_dvf),
         (iv_annonce.sidebar_name, iv_annonce),
+        (i_prix_dvf.sidebar_name, i_prix_dvf),
+        (ii_prix_annonces.sidebar_name, ii_prix_annonces),
+        (iii_prix_features.sidebar_name, iii_prix_features),          
         (iv_demo.sidebar_name, iv_demo)
     ]
 )
@@ -40,7 +40,7 @@ def run():
         "https://dst-studio-template.s3.eu-west-3.amazonaws.com/logo-datascientest.png",
         width=200,
     )
-    tab_name = st.sidebar.radio("", list(TABS.keys()), 0)
+    tab_name = st.sidebar.radio("", list(TABS.keys()), index = 0)
     st.sidebar.markdown("---")
     st.sidebar.markdown(f"## {config.PROMOTION}")
 
