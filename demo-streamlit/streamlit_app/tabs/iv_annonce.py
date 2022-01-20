@@ -2,7 +2,7 @@ import matplotlib.image as img
 import streamlit as st
 
 title = "Annonce demo"
-sidebar_name = "4. Exemple d'annonce"
+sidebar_name = "0. Exemple d'annonce"
 
 def run():
     
